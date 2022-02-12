@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75EC03CD-A39D-4696-9EFB-EDB281F6BAF7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OCT_WEIGHT.Manager.Program</RootNamespace>
+    <AssemblyName>OCT_WEIGHT.Manager.Program</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Deploy_M\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Deploy_M\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Automation.BDaq, Version=1.0.1.0, Culture=neutral, PublicKeyToken=463f5928d60183a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Deploy_M\Automation.BDaq.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.AXISMEDIACONTROLLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Deploy_M\AxInterop.AXISMEDIACONTROLLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Deploy_M\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Design.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Projects.v13.1.Installers, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Win.Projects.v13.1.Design, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1.UI, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1.UI, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.1.Design, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Design, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="JPlatform.Client.Controls5, Version=5.1.0.0, Culture=neutral, PublicKeyToken=744cff4a7dda5f1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\JPlatform.Client.Controls5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TemplateWizardInterface, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="OFX.Common, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OFX.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.4.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\resource\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCommon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommon.Designer.cs">
+      <DependentUpon>FrmCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMENU.Designer.cs">
+      <DependentUpon>FrmMENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysActual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysActual.Designer.cs">
+      <DependentUpon>SysActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysActual2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysActual2.designer.cs">
+      <DependentUpon>SysActual2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysActualDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysActualDay.Designer.cs">
+      <DependentUpon>SysActualDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysAuth.designer.cs">
+      <DependentUpon>SysAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysCar.Designer.cs">
+      <DependentUpon>SysCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysCust.Designer.cs">
+      <DependentUpon>SysCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysGong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysGong.Designer.cs">
+      <DependentUpon>SysGong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysInnerCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysInnerCar.Designer.cs">
+      <DependentUpon>SysInnerCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysInnerMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysInnerMng.Designer.cs">
+      <DependentUpon>SysInnerMng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysItem.Designer.cs">
+      <DependentUpon>SysItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysOpPerfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysOpPerfo.Designer.cs">
+      <DependentUpon>SysOpPerfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysRfid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysRfid.Designer.cs">
+      <DependentUpon>SysRfid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysScha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysScha.Designer.cs">
+      <DependentUpon>SysScha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysUser.designer.cs">
+      <DependentUpon>SysUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sysVehlSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sysVehlSearch.Designer.cs">
+      <DependentUpon>sysVehlSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysWaitVehl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysWaitVehl.Designer.cs">
+      <DependentUpon>SysWaitVehl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysOpPerfoDiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysOpPerfoDiv.Designer.cs">
+      <DependentUpon>SysOpPerfoDiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehl.Designer.cs">
+      <DependentUpon>FrmVehl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWeight.Designer.cs">
+      <DependentUpon>FrmWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWeightList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWeightList.Designer.cs">
+      <DependentUpon>FrmWeightList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWeightSeinList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWeightSeinList.Designer.cs">
+      <DependentUpon>FrmWeightSeinList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysEmpCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysEmpCar.designer.cs">
+      <DependentUpon>SysEmpCar.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OCT_WEIGHT.AutoWeight\OCT_WEIGHT.AutoWeight.csproj">
+      <Project>{705E0E83-60B2-4B6B-87C6-1E72C3E647FB}</Project>
+      <Name>OCT_WEIGHT.AutoWeight</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCT_WEIGHT.Manager.Common\OCT_WEIGHT.Manager.Common.csproj">
+      <Project>{061D0B52-8EAF-4105-96B0-A2228183228C}</Project>
+      <Name>OCT_WEIGHT.Manager.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmCommon.resx">
+      <DependentUpon>FrmCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMENU.resx">
+      <DependentUpon>FrmMENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysActual.resx">
+      <DependentUpon>SysActual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysActual2.resx">
+      <DependentUpon>SysActual2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysActualDay.resx">
+      <DependentUpon>SysActualDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysAuth.resx">
+      <DependentUpon>SysAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysCar.resx">
+      <DependentUpon>SysCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysCust.resx">
+      <DependentUpon>SysCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysGong.resx">
+      <DependentUpon>SysGong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysInnerCar.resx">
+      <DependentUpon>SysInnerCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysInnerMng.resx">
+      <DependentUpon>SysInnerMng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysItem.resx">
+      <DependentUpon>SysItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysOpPerfo.resx">
+      <DependentUpon>SysOpPerfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysRfid.resx">
+      <DependentUpon>SysRfid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysScha.resx">
+      <DependentUpon>SysScha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysUser.resx">
+      <DependentUpon>SysUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sysVehlSearch.resx">
+      <DependentUpon>sysVehlSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysWaitVehl.resx">
+      <DependentUpon>SysWaitVehl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysOpPerfoDiv.resx">
+      <DependentUpon>SysOpPerfoDiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehl.resx">
+      <DependentUpon>FrmVehl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWeight.resx">
+      <DependentUpon>FrmWeight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWeightList.resx">
+      <DependentUpon>FrmWeightList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWeightSeinList.resx">
+      <DependentUpon>FrmWeightSeinList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysEmpCar.resx">
+      <DependentUpon>SysEmpCar.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon01_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon02_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon03.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon03_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon04_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon05.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon05_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon06.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon06_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon07.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon07_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon08.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon08_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon09.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon09_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon10_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feature_32x32.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

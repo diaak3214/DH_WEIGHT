@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SqlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQueryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryDataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SqlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQueryDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQueryDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetQuery" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetQueryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:GetQuery" />
+  </wsdl:message>
+  <wsdl:message name="GetQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:GetQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQueryDataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetQueryDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQueryDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:SetQuery" />
+  </wsdl:message>
+  <wsdl:message name="SetQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:SetQueryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DBServiceSoap">
+    <wsdl:operation name="GetQuery">
+      <wsdl:input message="tns:GetQuerySoapIn" />
+      <wsdl:output message="tns:GetQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryDataSet">
+      <wsdl:input message="tns:GetQueryDataSetSoapIn" />
+      <wsdl:output message="tns:GetQueryDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetQuery">
+      <wsdl:input message="tns:SetQuerySoapIn" />
+      <wsdl:output message="tns:SetQuerySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DBServiceSoap" type="tns:DBServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetQuery">
+      <soap:operation soapAction="http://tempuri.org/GetQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryDataSet">
+      <soap:operation soapAction="http://tempuri.org/GetQueryDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetQuery">
+      <soap:operation soapAction="http://tempuri.org/SetQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DBServiceSoap12" type="tns:DBServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetQuery">
+      <soap12:operation soapAction="http://tempuri.org/GetQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQueryDataSet">
+      <soap12:operation soapAction="http://tempuri.org/GetQueryDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetQuery">
+      <soap12:operation soapAction="http://tempuri.org/SetQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DBService">
+    <wsdl:port name="DBServiceSoap" binding="tns:DBServiceSoap">
+      <soap:address location="http://10.10.65.102/weight/DBService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DBServiceSoap12" binding="tns:DBServiceSoap12">
+      <soap12:address location="http://10.10.65.102/weight/DBService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

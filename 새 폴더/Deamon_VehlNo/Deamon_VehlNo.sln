@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deamon_VehlNo", "Deamon_VehlNo\Deamon_VehlNo.csproj", "{57DE82A6-5E1A-4390-B4EF-FE970F80133A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deamon_VehlNo_LIst", "Deamon_VehlNo_LIst\Deamon_VehlNo_LIst.csproj", "{DED1A44C-7FC3-4CA4-B138-A6FD0A3994DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57DE82A6-5E1A-4390-B4EF-FE970F80133A}.Debug|x86.ActiveCfg = Debug|x86
+		{57DE82A6-5E1A-4390-B4EF-FE970F80133A}.Debug|x86.Build.0 = Debug|x86
+		{57DE82A6-5E1A-4390-B4EF-FE970F80133A}.Release|x86.ActiveCfg = Release|x86
+		{57DE82A6-5E1A-4390-B4EF-FE970F80133A}.Release|x86.Build.0 = Release|x86
+		{DED1A44C-7FC3-4CA4-B138-A6FD0A3994DC}.Debug|x86.ActiveCfg = Debug|x86
+		{DED1A44C-7FC3-4CA4-B138-A6FD0A3994DC}.Debug|x86.Build.0 = Debug|x86
+		{DED1A44C-7FC3-4CA4-B138-A6FD0A3994DC}.Release|x86.ActiveCfg = Release|x86
+		{DED1A44C-7FC3-4CA4-B138-A6FD0A3994DC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

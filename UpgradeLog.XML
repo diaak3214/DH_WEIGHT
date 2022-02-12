@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="	OCT_WEIGHT">
+</Property><Property Name="솔루션 파일" Value="D:\Project\02.한국철강\05.개발\01.무인계량\OCT_WEIGHT\OCT_WEIGHT.sln">
+</Property><Property Name="Date" Value="2016년 9월 7일 수요일">
+</Property><Property Name="Time" Value="오후 16:19:52">
+</Property></Properties><Event ErrorLevel="1" Project="OCT_Update" Source="OCT_Update\OCT_Update.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="OCT_Update" Source="OCT_Update\OCT_Update.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="OCT_Update" Source="OCT_Update\OCT_Update.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="OCT_Update" Source="OCT_Update\OCT_Update.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event></UpgradeLog>

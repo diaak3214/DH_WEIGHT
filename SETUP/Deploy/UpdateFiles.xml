@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpdateFiles>
+  <UpdateUrl Url="http://10.2.1.1:80/KISCO_WEIGHT/Deploy/" />
+  <DeployServerUrl Url="http://10.2.1.1:80/KISCO_WEIGHT/Deploy/" />
+  <Language Value="KOREAN" />
+  <LogFileName Value="ErrorLog1.txt" />
+  <LoggingEnabled Value="True" />
+  <wsAOS_Service_OFX_test Value="http://10.2.1.1/OFX/ServiceTalkListener.asmx" />
+  <wsAOS_Service_OFX Value="http://10.2.1.1:80/OFX2/ServiceTalkListener.asmx" />
+  <wsAOS_Service Value="http://10.2.1.1:8080/KISCO_WEIGHT_SVC/svcWEIGHTHandling.asmx" />
+  <wsAOS_Service_test Value="http://10.2.1.1:80/KISCOWEBSVCTEST/svcWEIGHTHandling.asmx" />
+  <FileServerURL Url="http://10.2.1.1/KISCO/Files/" />
+  <FileServerPage Value="http://10.2.1.1/KISCO/Files/FileService.asmx" />
+  <MonitoringServerPage Value="http://10.2.1.1/KISCO/Monitoring/MonitoringService.asmx" />
+  <ConnectionString Value="Data Source=(DESCRIPTION =  (ADDRESS_LIST =  (ADDRESS = (PROTOCOL = TCP)(HOST = 192.1.1.46)(PORT = 1521))) (CONNECT_DATA = (SID = IODB))) ;User Id=AWDBO;Password=AWDBO" />
+  <FTPIP Value="10.2.1.1" />
+  <FTPPort Value="2100" />
+  <FTPID Value="administrator" />
+  <FTPPass Value="kisco@VIDEO" />
+  <Folder Value="" />
+  <WORKCODE Value="P" />
+  <Files Name="AppLoaderFiles">
+    <File Name="OctoUpdateV2.exe">1.0.0.0</File>
+  </Files>
+  <Files Name="ApplicationFiles">
+    <File Name="OCT_WEIGHT.Manager.exe">1.0.0.0</File>
+    <File Name="OCT_WEIGHT.Manager.Program.dll">1.0.0.2</File>
+    <File Name="OCT_WEIGHT.Manager.Common.dll">1.0.0.0</File>
+  </Files>
+</UpdateFiles>

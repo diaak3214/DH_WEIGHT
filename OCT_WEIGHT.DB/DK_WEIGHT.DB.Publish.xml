@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\weight" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="http://localhost/" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="프로필1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="octosys_notebook" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA58nWd/asfUWXqzhQYq7gqgAAAAACAAAAAAAQZgAAAAEAACAAAACU54WgykpQMmugPg9VfbPhHxpoNFrgRkz+ve6k3au+SQAAAAAOgAAAAAIAACAAAAAx8UacbOzS1LPJuzW0xp56EZRsKwRia0JEbB4o5bAtExAAAAB7VL99CEPk52aIieGGEEzvQAAAALjRaoTIM8NgQ+xS7qtprzNubG5mI6TZMNZ0wBGSSKi/U7f8rnDUIFchGU1YOl5AQTzHOWbK9lBtJb6GcD4DIbI=" SelectedForPublish="True">
+    <file relUrl="bin/DK_WEIGHT.DB.dll" publishTime="05/03/2019 17:39:10" />
+    <file relUrl="bin/Oracle.DataAccess.dll" publishTime="04/29/2019 10:37:09" />
+    <file relUrl="bin/DK_WEIGHT.DB.pdb" publishTime="05/03/2019 17:39:10" />
+    <file relUrl="DBService.asmx" publishTime="04/29/2019 10:36:53" />
+    <file relUrl="Web.config" publishTime="05/03/2019 17:42:31" />
+  </publishProfile>
+</publishData>

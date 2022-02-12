@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UpdateFiles>
+  <ServiceUrl Url="http://10.10.65.102/NEW_WEIGHT_PH/DBService.asmx" />
+  <DeployServerUrl Url="http://10.10.65.102/NEW_WEIGHT/Deploy/" />
+  <Area Url ="D" />
+  <Weight Url ="P08" />
+  <Comport value ="COM1" />
+  <Rfid value ="10.10.38.106" />
+</UpdateFiles>
+

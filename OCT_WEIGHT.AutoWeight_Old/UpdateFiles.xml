@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UpdateFiles>  
+  <ServiceUrl Url="http://10.10.65.102/NEW_WEIGHT_PH/DBService.asmx" />
+  <DeployServerUrl Url="http://10.10.90.15:8080/Deploy/" />
+  <Area Url ="P" />
+  <Weight Url ="P07" />
+  <Comport value ="COM4" />
+  <Rfid value ="10.10.86.159" />
+  <Rfid_PORT value ="2001" />
+  <LPR value ="10.10.50.197" />
+  <PAN1 value ="4" />
+  <PAN2 value ="-5" />
+  <BON1 value ="-2" />
+  <BON2 value ="-6" />
+  <BEM1 value ="0" />
+  <BEM2 value ="-6" />
+  
+  <Files Name="AppLoaderFiles">
+    <File Name="DKUpdate.exe">1.0.0.0</File>
+  </Files>
+  <Files Name="ApplicationFiles">
+    <File Name="DK_WEIGHT.AutoWeight.exe">1.0.0.0</File>
+  </Files>
+</UpdateFiles>
+

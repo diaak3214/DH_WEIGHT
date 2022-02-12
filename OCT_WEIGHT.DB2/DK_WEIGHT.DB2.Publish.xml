@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\01_PROJECT\Webservice\weight2" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="프로필1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/DK_WEIGHT.DB2.pdb" publishTime="08/18/2016 13:19:46" />
+    <file relUrl="bin/DK_WEIGHT.DB2.dll" publishTime="08/18/2016 13:19:47" />
+    <file relUrl="bin/Oracle.DataAccess.dll" publishTime="12/31/2009 20:03:54" />
+    <file relUrl="DBService.asmx" publishTime="07/22/2016 10:00:16" />
+    <file relUrl="Web.config" publishTime="08/18/2016 13:19:48" />
+  </publishProfile>
+</publishData>

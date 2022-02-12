@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UpdateFiles>
+	<UpdateUrl Url="http://112.216.134.27/OctoWeb/Deploy/ERP/UI/" />
+	<DeployServerUrl Url="http://112.216.134.27/OctoWeb/Deploy/ERP/UI/" />
+	<Language Value="KOREAN" />
+	<LogFileName Value="ErrorLog1.txt" />
+	<LoggingEnabled Value="True" />
+	<UserID Value="yhshin" />
+	<wsAOS_Service Value="http://112.216.134.27/OctoWeb/OFX/ServiceTalkListener.asmx" />
+	<ReportServerURL Value="http://112.216.134.27/OctoWeb/Report" />
+	<ReportSerivePage Value="http://112.216.134.27/OctoWeb/Report/rdViewer.aspx" />
+	<FileServerURL Url="http://112.216.134.27/OctoWeb/Files/" />
+	<FileServerPage Value="http://112.216.134.27/OctoWeb/Files/FileService.asmx" />
+	<MonitoringServerPage Value="http://112.216.134.27/OctoWeb/Monitoring/MonitoringService.asmx" />
+	<Files Name="AppLoaderFiles">
+		<File Name="OctoUpdateV2.exe">1.0.0.0</File>
+	</Files>
+	<Files Name="ApplicationFiles">
+		<File Name="OCTOSYS.ERP.AppBrowser.exe">1.0.0.45</File>
+		<File Name="OctoCommonv2.dll">1.0.0.58</File>
+		<File Name="OFX.Common.dll">1.0.0.6</File>
+	</Files>
+</UpdateFiles>

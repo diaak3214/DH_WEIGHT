@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{061D0B52-8EAF-4105-96B0-A2228183228C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OCT_WEIGHT.Manager.Common</RootNamespace>
+    <AssemblyName>OCT_WEIGHT.Manager.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Deploy_M\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Deploy_M\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JPlatform.Client.Controls5, Version=5.1.0.0, Culture=neutral, PublicKeyToken=744cff4a7dda5f1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\JPlatform.Client.Controls5.dll</HintPath>
+    </Reference>
+    <Reference Include="OFX.Common, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OFX.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.4.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\resource\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\FrmHelpDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\FrmHelpDlg.designer.cs">
+      <DependentUpon>FrmHelpDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\OctoButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\OctoButton.designer.cs">
+      <DependentUpon>OctoButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\OctoHelper%28Large%29.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\OctoHelper%28Large%29.designer.cs">
+      <DependentUpon>OctoHelper%28Large%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\OctoHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\OctoHelper.designer.cs">
+      <DependentUpon>OctoHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Except\OctoException.cs" />
+    <Compile Include="FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info\clsUserInfo.cs" />
+    <Compile Include="info\Enums.cs" />
+    <Compile Include="info\FierVersionInfo.cs" />
+    <Compile Include="info\UpdateManager.cs" />
+    <Compile Include="OctoBarButtonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OctoBarButtonItem.designer.cs">
+      <DependentUpon>OctoBarButtonItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OctoBarSubItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OctoBarSubItem.designer.cs">
+      <DependentUpon>OctoBarSubItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\MasterCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\MasterCode.Designer.cs">
+      <DependentUpon>MasterCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\UserPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\UserPopup.Designer.cs">
+      <DependentUpon>UserPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\VehlimgPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\VehlimgPopup.designer.cs">
+      <DependentUpon>VehlimgPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\VehlPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\VehlPopup.Designer.cs">
+      <DependentUpon>VehlPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\ReceiptPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\ReceiptPopup.Designer.cs">
+      <DependentUpon>ReceiptPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\ReturnPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\ReturnPopup.Designer.cs">
+      <DependentUpon>ReturnPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\ManualWeightPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\ManualWeightPopup.Designer.cs">
+      <DependentUpon>ManualWeightPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\SeinPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\SeinPopup.Designer.cs">
+      <DependentUpon>SeinPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\ManualReceiptPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\ManualReceiptPopup.Designer.cs">
+      <DependentUpon>ManualReceiptPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceAdapter.cs" />
+    <Compile Include="util\CustomColumnDisplayTextChange.cs" />
+    <Compile Include="util\MsgBoxUtil.cs" />
+    <Compile Include="WebReference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\FrmHelpDlg.resx">
+      <DependentUpon>FrmHelpDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\OctoHelper%28Large%29.resx">
+      <DependentUpon>OctoHelper%28Large%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\OctoHelper.resx">
+      <DependentUpon>OctoHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OctoBarButtonItem.resx">
+      <DependentUpon>OctoBarButtonItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\MasterCode.resx">
+      <DependentUpon>MasterCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\UserPopup.resx">
+      <DependentUpon>UserPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\VehlimgPopup.resx">
+      <DependentUpon>VehlimgPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\VehlPopup.resx">
+      <DependentUpon>VehlPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\ReceiptPopup.resx">
+      <DependentUpon>ReceiptPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\ReturnPopup.resx">
+      <DependentUpon>ReturnPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\ManualWeightPopup.resx">
+      <DependentUpon>ManualWeightPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\SeinPopup.resx">
+      <DependentUpon>SeinPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\ManualReceiptPopup.resx">
+      <DependentUpon>ManualReceiptPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feature_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon01_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon02_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon03.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon03_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon04_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon05.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon05_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon06.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon06_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon07.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon07_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon08.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon08_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon09.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon09_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon10_on.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon02_on1.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
